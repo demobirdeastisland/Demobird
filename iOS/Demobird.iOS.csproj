@@ -121,10 +121,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Views\N-00-FirstView\" />
+    <Folder Include="Resources\Storyboard\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
-    <InterfaceDefinition Include="Views\MainView.xib" />
+    <InterfaceDefinition Include="Resources\Storyboard\FirstViewStoryboard.storyboard" />
+    <InterfaceDefinition Include="Views\N-00-FirstView\FirstView.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -134,11 +137,13 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="Views\MainView.designer.cs" />
-    <Compile Include="Views\MainView.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="DebugTrace.cs" />
+    <Compile Include="Views\N-00-FirstView\FirstView.cs" />
+    <Compile Include="Views\N-00-FirstView\FirstView.designer.cs">
+      <DependentUpon>FirstView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
