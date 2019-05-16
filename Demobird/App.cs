@@ -1,3 +1,4 @@
+using Demobird.ViewModels.N00FirstView;
 using MvvmCross.Platform.IoC;
 
 namespace Demobird
@@ -11,7 +12,7 @@ namespace Demobird
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            RegisterNavigationServiceAppStart<ViewModels.MainViewModel>();
+            RegisterNavigationServiceAppStart<FirstViewModel>();
         }
     }
 }
